@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "555106048738",
+    "project_id": "diet-right-5c93e",
+    "storage_bucket": "diet-right-5c93e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:555106048738:android:91939657470ced42299cbb",
+        "android_client_info": {
+          "package_name": "com.example.dietright"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCluh6w1_cIzNFiwHfOkvIC0MVIQizxM9A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
