@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 import com.google.firebase.auth.FirebaseAuth;
+import android.content.Intent;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -50,10 +51,18 @@ public class LoginActivity extends AppCompatActivity {
                 .addOnCompleteListener(this, task -> {
                     if (task.isSuccessful()) {
                         Toast.makeText(LoginActivity.this, "Login successful!", Toast.LENGTH_SHORT).show();
-                        // Navigate to another activity here
+
+                        // Navigate to UserMainPage activity
+                        Intent intent = new Intent(LoginActivity.this, UserMainPage.class);
+                        startActivity(intent);
+
+                        // Optional: Finish LoginActivity so user can't return to it with the back button
+                        finish();
                     } else {
                         Toast.makeText(LoginActivity.this, "Login failed: " + task.getException().getMessage(), Toast.LENGTH_LONG).show();
                     }
                 });
     }
+
+
 }
